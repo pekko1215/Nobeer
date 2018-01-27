@@ -1,7 +1,7 @@
 (function( $ ) {
   $.fn.Nobeer = function(_option) {
 	var wrapper = this;
-	var idx = 0;
+	var idx = _option.idx || 0;
 	_option = Object.assign({
 		domList:[],
 		show:function(){
